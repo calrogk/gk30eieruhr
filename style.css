@@ -1,0 +1,56 @@
+/**
+https://coolors.co/32373b-4a5859-f36421-fbfff1-f8f4e3
+ */
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 100%;
+}
+body {
+  background-color: #f36421;
+  color: #fbfff1;
+  padding-top: 3vw;
+  display: block;
+  font-family: ".AppleSystemUIFont", "Helvetica", "Helvetica Neue", "Arial", "Tahoma", sans-serif;
+}
+body #menu {
+  position: absolute;
+  top: 1vh;
+  display: block;
+  width: 100vw;
+  text-align: center;
+}
+body #image {
+  position: absolute;
+  top: 20vh;
+  display: block;
+  width: 100vw;
+  height: 25vh;
+  text-align: center;
+}
+body #image img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+body #timer {
+  position: absolute;
+  top: 60vh;
+  display: block;
+  width: 100vw;
+  text-align: center;
+  font-size: 8vh;
+  font-weight: bold;
+}
+body #button {
+  position: absolute;
+  top: 88vh;
+  display: block;
+  width: 100vw;
+  text-align: center;
+}
+body #button button {
+  padding: 2vh 3vh;
+}
+/*# sourceMappingURL=style.css.map */
