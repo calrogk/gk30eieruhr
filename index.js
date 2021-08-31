@@ -1,11 +1,16 @@
 let alarm = new Audio("alarm.mp3");
 let timerStarted = false;
 
-function startTimer() {
+function startTimer(chosen) {
     if(!timerStarted) {
+        let timeMinutes;
+        if (chosen === "freezer") {
+            timeMinutes = 1000 * 60 * 6.5;
+        } else {
+            timeMinutes = 1000 * 60 * 7.5;
+        }
         let startTime = new Date().getTime();
-        let fiveMinutes = 1000 * 60 * 5;
-        let endTime = startTime + fiveMinutes;
+        let endTime = startTime + timeMinutes;
 
         setInterval(function () {
             let timeLeft = endTime - new Date().getTime();
