@@ -1,12 +1,14 @@
 let alarm = new Audio("alarm.mp3");
 let timerStarted = false;
+let timer = document.getElementById("timer");
+let body = document.getElementById("body");
 
 function startTimer(chosen) {
     if(!timerStarted) {
         let timeMinutes;
         switch (chosen) {
             case ("freezersoft") :
-                timeMinutes = 1000 * 60 * 6.5;
+                timeMinutes = 1000 * 60 * 0.01;
                 break
             case ("freezerhard") :
                 timeMinutes = 1000 * 60 * 7.0;
@@ -24,7 +26,7 @@ function startTimer(chosen) {
         let startTime = new Date().getTime();
         let endTime = startTime + timeMinutes;
 
-        setInterval(function () {
+        function returntimer(endTime) {
             let timeLeft = endTime - new Date().getTime();
 
             if (timeLeft > 0) {
@@ -42,8 +44,11 @@ function startTimer(chosen) {
             } else {
                 timer.innerHTML = "00 : 00";
                 alarm.play();
+                body.style.backgroundColor="#f90";
             }
-        }, 1000);
+        }
+        returntimer(endTime);
+        setInterval(function () {returntimer(endTime)}, 1000);
         timerStarted = true;
     }
 }
