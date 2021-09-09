@@ -20,35 +20,42 @@ body #menu {
   width: 100vw;
   text-align: center;
 }
-body #image_freezer {
+body .images {
   position: absolute;
+  top: 20vh;
+  display: block;
+  max-width: 25vw;
+  height: 25vh;
+  text-align: center;
+  font-size: 60%;
+}
+body .images img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 10px;
+}
+body .images strong {
+  font-size: 200%;
+  text-transform: uppercase;
+}
+body #image_freezer_soft {
   top: 20vh;
   left: 0;
-  display: block;
-  max-width: 50vw;
-  height: 25vh;
-  text-align: center;
 }
-body #image_freezer img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-}
-body #image_normal {
-  position: absolute;
+body #image_freezer_hard {
   top: 20vh;
-  right: 0;
-  display: block;
-  max-width: 50vw;
-  height: 25vh;
-  text-align: center;
+  left: 25vw;
 }
-body #image_normal img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
+body #image_normal_soft {
+  top: 20vh;
+  left: 50vw;
+}
+body #image_normal_hard {
+  top: 20vh;
+  left: 75vw;
 }
 body #timer {
   position: absolute;

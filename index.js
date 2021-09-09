@@ -4,10 +4,22 @@ let timerStarted = false;
 function startTimer(chosen) {
     if(!timerStarted) {
         let timeMinutes;
-        if (chosen === "freezer") {
-            timeMinutes = 1000 * 60 * 6.5;
-        } else {
-            timeMinutes = 1000 * 60 * 5.5;
+        switch (chosen) {
+            case ("freezersoft") :
+                timeMinutes = 1000 * 60 * 6.5;
+                break
+            case ("freezerhard") :
+                timeMinutes = 1000 * 60 * 7.0;
+                break
+            case ("normalsoft") :
+                timeMinutes = 1000 * 60 * 5.5;
+                break
+            case ("normalhard") :
+                timeMinutes = 1000 * 60 * 6.0;
+                break
+            default :
+                timeMinutes = 1000 * 60 * 6.5;
+                break
         }
         let startTime = new Date().getTime();
         let endTime = startTime + timeMinutes;

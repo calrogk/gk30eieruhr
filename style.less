@@ -27,38 +27,44 @@ body {
     width: 100vw;
     text-align: center;
   }
-
-  #image_freezer {
+  .images {
     position: absolute;
     top: 20vh;
-    left: 0;
     display: block;
-    max-width: 50vw;
+    max-width: 25vw;
     height: 25vh;
     text-align: center;
+    font-size: 60%;
 
     img {
+      display: block;
       width: auto;
       height: auto;
       max-width: 100%;
       max-height: 100%;
+      margin-bottom: 10px;
+    }
+
+    strong {
+      font-size: 200%;
+      text-transform: uppercase;
     }
   }
-  #image_normal {
-    position: absolute;
+  #image_freezer_soft {
     top: 20vh;
-    right: 0;
-    display: block;
-    max-width: 50vw;
-    height: 25vh;
-    text-align: center;
-
-    img {
-      width: auto;
-      height: auto;
-      max-width: 100%;
-      max-height: 100%;
-    }
+    left: 0;
+  }
+  #image_freezer_hard {
+    top: 20vh;
+    left: 25vw;
+  }
+  #image_normal_soft {
+    top: 20vh;
+    left: 50vw;
+  }
+  #image_normal_hard {
+    top: 20vh;
+    left: 75vw;
   }
 
   #timer {
