@@ -7,7 +7,7 @@ function startTimer(chosen) {
         if (chosen === "freezer") {
             timeMinutes = 1000 * 60 * 6.5;
         } else {
-            timeMinutes = 1000 * 60 * 7.5;
+            timeMinutes = 1000 * 60 * 5.5;
         }
         let startTime = new Date().getTime();
         let endTime = startTime + timeMinutes;
