@@ -8,7 +8,7 @@ function startTimer(chosen) {
         let timeMinutes;
         switch (chosen) {
             case ("freezersoft") :
-                timeMinutes = 1000 * 60 * 0.01;
+                timeMinutes = 1000 * 60 * 6.5;
                 break
             case ("freezerhard") :
                 timeMinutes = 1000 * 60 * 7.0;
